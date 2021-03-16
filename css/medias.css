@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+    header {
+        height: 300px;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 40%;
+    }
+    .information {
+        overflow-y: scroll;
+        height: 100vh;
+    }
+}
