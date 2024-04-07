@@ -16,11 +16,15 @@
   </head>
 
   <body>
+    <div class="toTop hidden">
+      <img src="./assets/icons/arrow-top.svg" alt="">
+    </div>
     <header>
       <div class="logo">FV</div>
       <div class="hamburger">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
-          <path fill="currentcolor"
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            fill="currentcolor"
             d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
           />
         </svg>
@@ -71,7 +75,7 @@
       </div>
       <img src="./assets/icons/desktop.svg" alt="" />
       <div class="scroll">
-        <div >
+        <div>
           <span class="scroll-icon">
             <span class="scroll-icon__wheel-outer">
               <span class="scroll-icon__wheel-inner"></span>
@@ -81,61 +85,107 @@
       </div>
     </section>
     <section class="info">
-      <h2 class="title">
-        <svg class="size-6" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path><path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path><path d="M12 12l0 .01"></path><path d="M3 13a20 20 0 0 0 18 0"></path></svg>
-        Professional Experience</h2>
-      <ol>
-        <li>
-          <div class="dot"></div>
-          <time>2023 - 2024</time>
-          <h3 class="company">Neoris</h3>
-          <h4 class="location">Monterrey, Mexico</h4>
-          <p class="description">
-            •Develop responsive web applications that adapt to various 
-            devices and connect with an AWS-hosted REST API. <br>
-            • Identify and resolve interface bugs, delegating tasks to the
-            appropriate team members.<br>
-            • Lead code refactoring efforts to optimize efficiency and
-            maintainability.<br>
-            • Conduct unit testing using Jest to ensure code quality.<br>
-            • Create endpoints with Express to access data in a MongoDB
-            database.<br>
-            • Develop efficient user interfaces using React and TypeScript.<br>
-            • Manage application state with Redux to improve scalability.</p>
-        </li>
-        <li>
-          <div class="dot"></div>
-          <time>2021 - 2023</time>
-          <h3 class="company">Endava</h3>
-          <h4 class="location">Monterrey, Mexico</h4>
-          <p class="description">
-            •Develop responsive web applications connecting with AWS REST API.<br>
-            • Identify and resolve interface bugs, delegating tasks as needed.<br>
-            • Provide career coaching and support to peers.<br>
-            • Lead code refactoring for efficiency and maintainability.<br>
-            • Conduct unit testing using Jest for quality assurance.<br>
-            • Create endpoints with Express to access MongoDB data.<br>
-            • Enhance security with authentication tokens and Auth0
-            technology.</p>
-        </li>
-        <li>
-          <div class="dot"></div>
-          <h3 class="company">Accenture</h3>
-          <time></time>
-          <h4 class="location">Monterrey, Mexico 2017 - 2021</h4>
-          <p class="description">
-            • Develop efficient and visually appealing user interfaces using
-            React and TypeScript. <br>
-            • Manage application state effectively with Redux to ensure
-            scalability and maintainability.<br>
-            • Enhance application performance through optimization
-            techniques like lazy loading and code splitting.<br>
-            • Conduct comprehensive testing using Jest and other libraries.<br>
-            • Integrate frontend with backend seamlessly using Express and
-            MySQL.<br>
-            • Utilize Git for version control and collaborative development.</p>
-        </li>
-      </ol>
+      <div>
+        <h2 class="title">
+          <svg
+            class="size-6"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"
+            ></path>
+            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
+            <path d="M12 12l0 .01"></path>
+            <path d="M3 13a20 20 0 0 0 18 0"></path>
+          </svg>
+          Professional Experience
+        </h2>
+        <ol class="process-list">
+          <li>
+            <div class="dot"></div>
+            <time>2023 - 2024</time>
+            <h3 class="company">Neoris</h3>
+            <h4 class="location">Monterrey, Mexico</h4>
+            <p class="description">
+              •Develop responsive web applications that adapt to various devices
+              and connect with an AWS-hosted REST API. <br />
+              • Identify and resolve interface bugs, delegating tasks to the
+              appropriate team members.<br />
+              • Lead code refactoring efforts to optimize efficiency and
+              maintainability.<br />
+              • Conduct unit testing using Jest to ensure code quality.<br />
+              • Create endpoints with Express to access data in a MongoDB
+              database.<br />
+              • Develop efficient user interfaces using React and TypeScript.<br />
+              • Manage application state with Redux to improve scalability.
+            </p>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <time>2021 - 2023</time>
+            <h3 class="company">Endava</h3>
+            <h4 class="location">Monterrey, Mexico</h4>
+            <p class="description">
+              •Develop responsive web applications connecting with AWS REST
+              API.<br />
+              • Identify and resolve interface bugs, delegating tasks as
+              needed.<br />
+              • Provide career coaching and support to peers.<br />
+              • Lead code refactoring for efficiency and maintainability.<br />
+              • Conduct unit testing using Jest for quality assurance.<br />
+              • Create endpoints with Express to access MongoDB data.<br />
+              • Enhance security with authentication tokens and Auth0
+              technology.
+            </p>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <h3 class="company">Accenture</h3>
+            <time></time>
+            <h4 class="location">Monterrey, Mexico 2017 - 2021</h4>
+            <p class="description">
+              • Develop efficient and visually appealing user interfaces using
+              React and TypeScript. <br />
+              • Manage application state effectively with Redux to ensure
+              scalability and maintainability.<br />
+              • Enhance application performance through optimization techniques
+              like lazy loading and code splitting.<br />
+              • Conduct comprehensive testing using Jest and other libraries.<br />
+              • Integrate frontend with backend seamlessly using Express and
+              MySQL.<br />
+              • Utilize Git for version control and collaborative development.
+            </p>
+          </li>
+        </ol>
+      </div>
+      <div>
+        <h2 class="title">
+          <img src="./assets/icons/graduation-cap.svg" alt="">
+          Education
+        </h2>
+        <ol class="process-list">
+          <li>
+            <div class="dot"></div>
+            <time>2022 - 2024</time>
+            <h3 class="company">Master's degree in Information Technology Management</h3>
+            <h4 class="location">TecMilenio, Monterey</h4>
+          </li>
+          <li>
+            <div class="dot"></div>
+            <time>2014 - 2019</time>
+            <h3 class="company">Bachelor's degree in Software Technologies Engineering</h3>
+            <h4 class="location">Univiersidad Autonoma de Nuevo leon, Monterrey</h4>
+          </li>
+        </ol>
+      </div>
     </section>
   </body>
 </html>
