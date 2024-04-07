@@ -1,64 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  margin: auto;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  background: linear-gradient(270deg, #33079f, #000000);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 51s ease infinite;
+  animation: AnimationName 51s ease infinite;
+}
+
 header {
-    background-image: url('./../assets/images/bg.jpg');
-    background-color: firebrick;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  max-width: 1024px;
+  width: 100%;
+  height: 75px;
+  .logo {
+    padding-left: 20px;
+    font-size: xx-large;
+  }
+  .hamburger {
+    padding-right: 20px;
+  }
 }
 
-.inner {
+nav {
+  ul {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-
-.profile-container {
-    display: flex;
-    justify-content: center;
-}
-
-.profile {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-}
-
-.profile-description {
-    color: rgba(255, 255, 255, 0.5);
-    text-shadow: 4px 0px 3px rgba(0, 0, 0, 0.50);
-    padding-top: 10px;
-}
-
-.social-media {
-    display: flex;
-    justify-content: space-between;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 20px;
-    text-shadow: 4px 0px 3px rgba(0, 0, 0, 0.50);
-}
-
-.information {
-    padding: 50px 30px;
-    text-align: justify;
-}
-
-.title-section {
-    padding-bottom: 30px;
-    font-size: 1.5em;
-    line-height: 1.5em;
-    color: #787878;
-}
-
-.project img {
-    width: 100%;
-    height: 100%;
-    max-height: 150px;
-    border-radius: 5px;
-    box-shadow: 10px 5px 75px -35px rgba(54, 52, 52, 1);
+    list-style: none;
+    li {
+      margin: 0 10px;
+      font-size: 20px;
+      border: 5px solid transparent;
+      img {
+        width: 19px;
+        height: 19px;
+      }
+    }
+    li:hover {
+      border-bottom-color: #c770f0;
+    }
+  }
 }
 
 section {
-    padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.presentation {
+  position: relative;
+  height: calc(100% - 75px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .container {
+    margin: auto 0;
+    letter-spacing: 5px;
+    h1 {
+      font-size: 80px;
+      margin-bottom: 15px;
+    }
+    .container-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      .option {
+        color: #d4d4d4;
+        background-color: #262626;
+        border-radius: 999999px;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-size: 12px;
+        align-items: center;
+        display: flex;
+        gap: 2px;
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        img {
+          padding-right: 10px;
+          width: 16px;
+          height: 16px;
+        }
+        :hover {
+          transition: 0.5s;
+        }
+      }
+    }
+    /* flex gap-2 items-center bg-neutral-900 text-neutral-300 rounded-full py-2 px-4 transition-transform hover:scale-110 duration-500 */
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .scroll {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+  }
+}
+
+.hamburger {
+  height: 24px;
+  width: 24px;
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .hamburger {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+
+  .presentation {
+    grid-template-columns: 1fr;
+    .container {
+      padding-left: 30px;
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .presentation .container {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 800px) {
+  section {
+    display: block;
+  }
+  .presentation .scroll {
+    display: none;
+  }
+}
+
+.scroll-icon {
+  display: block;
+  position: relative;
+  height: 3em;
+  width: 1.5em;
+  border: .25em solid #fff;
+  border-radius: 1em;
+}
+
+.scroll-icon__wheel-outer {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: .6em;
+  height: 1em;
+  width: .4em;
+  margin-left: -.2em;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.scroll-icon__wheel-inner {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  background: #fff;
+  animation: scroll_1 3s ease-in-out infinite;
+}
+
+.hidden {
+  display: none;
 }

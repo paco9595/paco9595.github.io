@@ -1,0 +1,29 @@
+@-webkit-keyframes AnimationName {
+    0% {
+      background-position: 18% 0%;
+    }
+    50% {
+      background-position: 83% 100%;
+    }
+    100% {
+      background-position: 18% 0%;
+    }
+  }
+  @keyframes AnimationName {
+    0% {
+      background-position: 18% 0%;
+    }
+    50% {
+      background-position: 83% 100%;
+    }
+    100% {
+      background-position: 18% 0%;
+    }
+  }
+  @keyframes scroll_1 {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-0.6em); }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(0.6em); }
+    100% { transform: translateY(0); }
+  }

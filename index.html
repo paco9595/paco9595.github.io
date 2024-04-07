@@ -1,113 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Francisco Villarreal</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/medias.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/animations.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./scripts/scroll.js"></script>
+  </head>
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <header class="col-12 col-md-4">
-                <div class="inner">
-                    <div>
-                        <div class="profile-container">
-                            <img class="profile" src="./assets/images/profile.jpeg"></img>
-                        </div>
-                        <p class="profile-description">
-                            Francisco J Villarreal P
-                        </p>
-                        <div class="social-media">
-                            <i class="fab fa-github" data-toggle="tooltip" data-placement="bottom" title="Github"></i>
-                            <i class="fab fa-linkedin" data-toggle="tooltip" data-placement="bottom"
-                                title="Linkedin"></i>
-                            <i class="fas fa-envelope" data-toggle="tooltip" data-placement="bottom" title="Email"></i>
-                            <i class="fas fa-download" data-toggle="tooltip" data-placement="bottom"
-                                title="Download CV"></i>
-                            <i class="fas fa-rss" data-toggle="tooltip" data-placement="bottom" title="Blog"></i>
-                        </div>
-                    </div>
-                </div>
-            </header>
-            <div class="information col-12 col-md-8">
-                <section>
-                    <div class="title-section">About Me</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit leo penatibus, donec nullam ultricies arcu
-                        egestas
-                        sollicitudin
-                        varius sapien, ridiculus aliquam in nostra pulvinar morbi nec id. A penatibus leo sodales
-                        pretium
-                        fames,
-                        torquent
-                        venenatis est primis varius congue, arcu pulvinar vel turpis. Montes fames diam purus gravida
-                        cum
-                        dapibus neque,
-                        ultrices at sociis quisque luctus facilisi nascetur, tempor nec justo sed condimentum molestie.z
-                    </p>
-                </section>
-                <section class="recent-work">
-                    <div class="title-section">Recent Work</div>
-                    <div class="projects row">
-                        <div class="project col-md-6 col-12" data-toggle="modal" data-target="#exampleModal">
-                            <img src="./assets/images/shopList_baner.png">
-                            <div class="info">
-                                test
-                            </div>
-                        </div>
-                        <div class="project col-md-6 col-12">
-                            <img src="https://fakeimg.pl/300/">
-                        </div>
-                        <div class="project col-md-6 col-12">
-
-                            <img src="https://fakeimg.pl/300/">
-                            <div class="info">
-                                test
-                            </div>
-                        </div>
-                        <div class="project col-md-6 col-12">
-                            <img src="https://fakeimg.pl/300/">
-                        </div>
-
-
-                    </div>
-                </section>
-                <section class="contact">
-                    <div class="title-section">Get In Touch</div>
-
-                </section>
-            </div>
+  <body>
+    <header>
+      <div class="logo">FV</div>
+      <div class="hamburger">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <img src="./assets/icons/home.svg" alt="" />
+            Home
+          </li>
+          <li>
+            <img src="./assets/icons/user.svg" alt="" />
+            about
+          </li>
+          <li>
+            <img src="./assets/icons/project.svg" alt="" />
+            Projects
+          </li>
+          <li><img src="./assets/icons/file.svg" alt="" /> Resume</li>
+          <li><img src="./assets/icons/pen.svg" alt="" /> Posts</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="presentation">
+      <div class="container">
+        <h2>Francisco Villarreal</h2>
+        <h1>Frontend Developer</h1>
+        <div class="container-options">
+          <a
+            href="https://www.linkedin.com/in/francisco-javier-villarreal-padilla-01017399/"
+            target="_blank"
+            class="option"
+          >
+            <img src="./assets/icons/linkedin.svg" alt="" />Linkedin</a
+          >
+          <a
+            href="https://drive.google.com/file/d/1xKp4EAbZC4hEd4CkPc7Qi8Gz49WZexkp/view?usp=sharing"
+            target="_blank"
+            class="option"
+          >
+            <img src="./assets/icons/file.svg" alt="" />CV
+          </a>
+          <a href="https://github.com/paco9595/" target="_blank" class="option">
+            <img src="./assets/icons/github.svg" alt="" />
+            Github
+          </a>
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        ...
-                    </div>
-                </div>
-            </div>
+      </div>
+      <img src="./assets/icons/desktop.svg" alt="" />
+      <div class="scroll">
+        <div>
+          <span class="scroll-icon">
+            <span class="scroll-icon__wheel-outer">
+              <span class="scroll-icon__wheel-inner"></span>
+            </span>
+          </span>
         </div>
-
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-</body>
-
+      </div>
+    </section>
+  </body>
 </html>
