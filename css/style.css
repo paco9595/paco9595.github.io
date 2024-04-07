@@ -5,17 +5,14 @@
 
 body {
   height: 100vh;
-  width: 100vw;
   color: white;
   margin: auto;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-
   background: linear-gradient(270deg, #33079f, #000000);
   background-size: 400% 400%;
-
   -webkit-animation: AnimationName 51s ease infinite;
   animation: AnimationName 51s ease infinite;
 }
@@ -34,6 +31,9 @@ header {
   }
   .hamburger {
     padding-right: 20px;
+    height: 24px;
+    width: 24px;
+    display: none;
   }
 }
 
@@ -56,15 +56,10 @@ nav {
   }
 }
 
-section {
-  display: flex;
-  justify-content: center;
+.presentation {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
-}
-
-.presentation {
   position: relative;
   height: calc(100% - 75px);
   display: grid;
@@ -102,7 +97,6 @@ section {
         }
       }
     }
-    /* flex gap-2 items-center bg-neutral-900 text-neutral-300 rounded-full py-2 px-4 transition-transform hover:scale-110 duration-500 */
   }
   img {
     width: 100%;
@@ -115,10 +109,62 @@ section {
   }
 }
 
-.hamburger {
-  height: 24px;
-  width: 24px;
-  display: none;
+.info {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 40px;
+  .title {
+    font-size: 48px;
+    margin-bottom: 10px;
+  }
+  ol {
+    list-style: none;
+    border-left: 1px solid #ccc;
+    padding-left: 16px;
+    li {
+      position: relative;
+      padding-top: 10px;
+      .dot {
+        position: absolute;
+        top: 16px;
+        left: -22px;
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background-color: red;
+      }
+      time {
+        line-height: 1px;
+        font-size: 14px;
+      }
+      .company {
+        line-height: 21px;
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 12;
+      }
+      .location {
+        letter-spacing: -.025;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 4px;
+      }
+      .description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-wrap: pretty;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -159,7 +205,7 @@ section {
   position: relative;
   height: 3em;
   width: 1.5em;
-  border: .25em solid #fff;
+  border: 0.25em solid #fff;
   border-radius: 1em;
 }
 
@@ -167,11 +213,11 @@ section {
   display: block;
   position: absolute;
   left: 50%;
-  top: .6em;
+  top: 0.6em;
   height: 1em;
-  width: .4em;
-  margin-left: -.2em;
-  border-radius: .4em;
+  width: 0.4em;
+  margin-left: -0.2em;
+  border-radius: 0.4em;
   overflow: hidden;
 }
 
